@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Set your location on the fields below, Barcelona is Lat 41 Long 2{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="latitude">Latitude</label>
+    <input name="latitude" id="latitude" required>
+    <label for="long">Longitude</label>
+    <input name="long" id="long" required>
+    <input type="submit" value="submit">
+  </form>
+{% endblock %}

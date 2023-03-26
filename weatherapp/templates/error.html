@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}There was an error getting the current weather: {{ error }}{% endblock %}</h1>
+{% endblock %}

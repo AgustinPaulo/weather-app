@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Current state of the weather in your location{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<body>
+  <p>Temperature: {{ temperature }}&deg;C</p>
+  <p>Weather: {{ weather }}</p>
+</body>
+{% endblock %}
