@@ -11,4 +11,4 @@ or you can run it locally:
 
 pip install -r requirements.txt
 
-flask --app weatherapp run
+flask --app weatherapp run --host=0.0.0.0 --port=8080
